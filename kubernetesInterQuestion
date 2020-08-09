@@ -1,1 +1,154 @@
+Kubernetes basics interview questions
+1. where do you store your docker files?
+ place where you have code.
 
+2. What is the Kubernetes?
+Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. 
+
+3. What is Minikube?
+Minikube is a tool that makes it easy to run Kubernetes locally. This runs a single Kubernetes cluster inside a virtual machine.
+
+4. what is kubectl?
+Kubectl is the platform using which you can pass commands to the cluster. 
+When you interact with your Kubernetes cluster using the kubectl command, 
+kubectl is communication between master API Server and cluster.
+
+5. What is Kubelet?
+This is an agent service which runs on each node.
+Kubelet is communication between master and node.
+Whoever try to speak (cluster master) with this Node they actually speak with kubelet inside this Node.
+
+6. What do you understand by Kube-proxy?
+Kube-proxy can run on each and every node and can do simple TCP/UDP packet forwarding across backend network service. So basically, it is a network proxy which reflects the services as configured in Kubernetes 
+
+7. What is ETCD?
+Etcd is written in Go programming language and is a distributed key-value store used for coordinating between distributed work. So, Etcd stores the configuration data of the Kubernetes cluster, representing the state of the cluster at any given point in time.
+
+8. What is a namespace in Kubernetes?
+Namespaces are intended for use in environments with many users spread across multiple teams, or projects. Namespaces are a way to divide cluster resources between multiple uses (via resource quota). In future versions of Kubernetes, objects in the same namespace will have the same access control policies by default.
+
+9. What is a node in Kubernetes?
+A node is a worker machine in Kubernetes, previously known as a minion. A nodemay be a VM or physical machine, depending on the cluster. Each node has the services necessary to run pods and is managed by the master components. The services on a node include Docker, kubelet and kube-proxy.
+
+10. Which process runs on Kubernetes master node?
+Kube-apiserver process runs on Kubernetes master node.
+
+11. Which process runs on Kubernetes non-master node?
+Kube-proxy process runs on Kubernetes non-master node.
+
+12. Which process validates and configures data for the api objects like pods, services?
+kube-apiserver process validates and configures data for the api objects.
+
+13. What is the use of kube-controller-manager?
+
+14. Where Kubernetes cluster data is stored?
+etcd is responsible for storing Kubernetes cluster data.
+
+15. What is the role of kube-scheduler?
+kube-scheduler is responsible for assigning a node to newly created pods.
+
+16. diff b/w ReplicaController and ReplicaSet?
+
+ReplicaSet is the next-generation ReplicaController. The only diffrence between a ReplcaSet and ReplicaController is the selector support.
+including a selector that specifies how to identify Pods…
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+1.       What is the advantage of Devops.
+
+2.       How to create the branches in SVN.
+
+3.       How to create the Repository.
+
+4.       How you set the configuration file in Maven.
+
+5.       How to run the Ant build.xml
+
+6.       How to interconnect the Maven in Jenkins
+
+7.       What is the use of Nexus repository
+
+8.       How to commit the code in SVN
+
+9.       How to give the access to user in SVN
+
+10.   What is the use of contrib task in Jenkins
+
+11.   What is the difference between ANT and Ant task
+
+12.   What is file set
+
+13.   Explain branching strategy.
+
+14.   Node configuration in Jenkins
+
+15.   How we will trigger the automatic build in Jenkins.
+
+16.   What is the use of quit period?
+
+17.   What is the use of build is parameterized?
+
+18.   How we will rename the trunk ,branch, tag?
+
+19.   Why we will use the sonar in Jenkins
+
+20.   What are the plugins your installed in your Jenkins
+
+21.   How you will upload the artifacts in nexus
+
+22.   Can you explain the release process using m2 release plugin
+
+23.   How you will do the deployment using the rundeck?
+
+24.   How you will do the merging process?
+
+25.   What are the issues resolved in Jenkins
+
+26.   Why we are using the Jenkins
+
+27.   What is advantages using continuous integration
+
+28.   Explain the user access in svn
+
+29.   How you will give the user access to single user for single Jenkins job
+
+30.   How you will give the admin access in Jenkins
+
+31.   What are the important things in pom.xml
+
+32.   What is the difference between SVN and Git
+
+33.   Explain branching strategy.
+
+34.   How you will create he Jenkins job
+
+35.   How you configure the node in Jenkins
+
+36.   What is the difference between ant and maven
+
+37.   How we will create the svn repository
+
+38.   How you will install svn
+
+39.   How you will install Jenkin
+
+40.    How you will install docker
+
+41.   How you will install chef
+
+42.   How you configure the docker image
+
+43.   How you pull the image from dockerhub
+
+44.   How you will create the container
+
+45.   How you install the Jenkins in docker container
+
+46.   How you create the new server in Chef
+
+47.   Why we are using chef
+
+48.   Explain docker architecture
+
+49.   Explain chef architecture
+
+50.   What are the advantages using the Chef.
