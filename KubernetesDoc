@@ -1,0 +1,34 @@
+$ kubectl get all --all-namespaces -o wide 
+
+1)Pods 
+
+2)rs -> ReplicaSet is improved verison of rc -> ReplicaContainer 
+rs has label based selectore
+
+$ kubectl create -f replication.yaml 
+replicationcontroller "nginx" created -> kind: ReplicaContainer inside yaml file 
+
+ReplicaSet does not needs to be created explicitly, inside our deployment section itself "spec" can be used to represent "ReplicaSet"
+$ watch -n0 kubectl get all 
+
+3)Deployments
+  B/G deployment -> deploy all at once 
+  Canary -> deploy increamentally
+
+4)Services 
+    service would wrap around deployment
+
+kubectl get pods | grep -i "<podname>"
+
+kubectl get deployment
+
+kubectl scale deployment <podname> --replicas=0
+kubectl scale deployment <podname> --replicas=1
+
+kubectl describe deployment <deploymentName>
+
+kubectl edit deployment <deploymentName> -o yaml
+
+kubectl apply -f <deployment>.yml
+output :
+  deployment.apps/<deployment> configured
